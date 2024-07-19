@@ -80,7 +80,7 @@ mod tests {
         c1.spend(&mut parent.money, 20);
     }
 
-    fn get_child<'a>(parent: &'a mut Parent, index: usize) -> &'a mut Child {
+    fn get_child<'a>(parent: &mut Parent, index: usize) -> &mut Child {
         &mut parent.children[index]
     }
 
